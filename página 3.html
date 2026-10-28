@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+  <style>
+           
+body {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+
+h1 {
+    color: burlywood;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1050px;
+    margin: 25px auto 40px;
+}
+
+.dev-card {
+    width: 280px;
+    flex: 0 1 280px;
+    background-color: #151515;
+    color: white;
+    border: 1px solid #8b6b32;
+    border-radius: 12px;
+    padding: 25px 18px;
+    text-align: center;
+}
+
+.dev-card img {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 18px;
+}
+
+.dev-card h3 {
+    font-size: 19px;
+    color: burlywood;
+    margin-bottom: 8px;
+}
+
+.dev-card p {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.detalhes {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+}
+
+.detalhes h4 {
+    color: burlywood;
+    text-align: center;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.accordion {
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background-color: #151515;
+    color: white;
+    border: 1px solid #594626;
+}
+
+.accordion-button {
+    background-color: #222;
+    color: burlywood;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #302719;
+    color: #f0d4a0;
+    box-shadow: none;
+}
+
+.accordion-body {
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+    </style>
+    <title>Terceira página</title>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+    <img src="Imagens/Imagem 1.png" alt="reserva_bebidas_assados" width="150">
+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="página 1.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="página 2.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="página 3.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="página 4.html">Mais informações</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Navegue
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="página 1.html">Home</a></li>
+                <li><a class="dropdown-item" href="página 2.html">Produtos</a></li>
+                <li><a class="dropdown-item" href="página 3.html">Sobre</a></li>
+                <li><a class="dropdown-item" href="página 4.html">Mais informações</a></li>
+            </ul>
+            </li>
+            <!--li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li-->
+        </ul>
+        </div>
+    </div>
+    </nav>
+    
+    
+<h1>QUEM SOMOS?</h1>
+
+<h2>Conheça mais da nossa equipe de desenvolvedoras!</h2>
+
+<!-- CARDS DAS DESENVOLVEDORAS -->
+<div class="equipe">
+
+    <div class="dev-card">
+        <img src="Imagens/Imagem Ana.png"
+             alt="Foto de Ana Julia">
+
+        <h3>Ana Julia Oliveira do Prado</h3>
+
+        <p>Desenvolvimento e programação de software</p>
+    </div>
+
+    <div class="dev-card">
+        <img src="Imagens/Imagem Maria.png"
+             alt="Foto de Maria Clara">
+
+        <h3>Maria Clara Castro</h3>
+
+        <p>Desenvolvimento web e design da interface</p>
+    </div>
+
+    <div class="dev-card">
+        <img src="Imagens/Imagem Mariana.png"
+             alt="Foto de Mariana">
+
+        <h3>Mariana Lima Peres</h3>
+
+        <p>Desenvolvimento e programação de software</p>
+    </div>
+
+</div>
+
+<!-- DETALHES DO TRABALHO -->
+<section class="detalhes">
+
+    <h4>Conheça o trabalho das nossas desenvolvedoras</h4>
+
+    <div class="accordion accordion-flush"
+         id="accordionDesenvolvedoras">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#ana"
+                        aria-expanded="false"
+                        aria-controls="ana">
+                    Ana Julia — Desenvolvimento e Implementação
+                    de Funcionalidades
+                </button>
+            </h2>
+
+            <div id="ana"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#accordionDesenvolvedoras">
+
+                <div class="accordion-body">
+Ana Julia foi responsável, em conjunto com Mariana, pelo desenvolvimento da programação do software. Utilizando Python e o ambiente de desenvolvimento Visual Studio, contribuiu para a implementação da lógica e das funcionalidades necessárias ao funcionamento do sistema.
+
+Sua participação envolveu a organização do código, o desenvolvimento de recursos da aplicação e o uso de ferramentas de programação para auxiliar na execução, nos testes e na identificação de possíveis erros. Seu trabalho contribuiu para transformar a proposta do projeto em uma solução tecnológica prática, organizada e voltada às necessidades dos usuários.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#maria"
+                        aria-expanded="false"
+                        aria-controls="maria">
+                    Maria Clara — Desenvolvimento Web e Design
+                    da Interface
+                </button>
+            </h2>
+
+            <div id="maria"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#accordionDesenvolvedoras">
+
+                <div class="accordion-body">
+Maria Clara foi responsável pelo desenvolvimento visual e pela estruturação do site, utilizando HTML, CSS e Bootstrap no Visual Studio Code (VS Code). Seu trabalho envolveu a criação e a formatação das páginas, a organização dos elementos e a definição de cores, espaçamentos, tamanhos e estilos.
+
+Com atenção à apresentação visual e à experiência do usuário, trabalhou para construir uma interface organizada, intuitiva e agradável. O uso do Bootstrap auxiliou na estruturação dos componentes e na criação de um layout consistente, contribuindo para apresentar o projeto de maneira profissional e valorizar a solução oferecida aos clientes.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mariana"
+                        aria-expanded="false"
+                        aria-controls="mariana">
+                    Mariana — Desenvolvimento e Programação
+                    do Software
+                </button>
+            </h2>
+
+            <div id="mariana"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#accordionDesenvolvedoras">
+
+                <div class="accordion-body">
+Mariana foi responsável, em conjunto com Ana Julia, pelo desenvolvimento da programação do software. Utilizando Python e o ambiente de desenvolvimento Visual Studio, participou da construção da lógica do sistema e da implementação das funcionalidades previstas para o projeto.
+
+Durante o desenvolvimento, contribuiu para a organização do código e para o uso de ferramentas que auxiliam na escrita, na execução e na depuração da aplicação. Sua participação foi importante para construir uma solução tecnológica funcional, com foco na praticidade, na organização e na otimização das tarefas realizadas pelos usuários.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
